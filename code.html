@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+        .stars { display: flex; flex-direction: row-reverse; justify-content: center; }
+        .stars input { display: none; }
+        .stars label { font-size: 30px; color: lightgray; cursor: pointer; }
+        .stars input:checked ~ label, .stars label:hover, .stars label:hover ~ label { color: gold; }
+    </style>
+</head>
+<body>
+    <div class="stars">
+        <input type="radio" id="star5" name="rating"><label for="star5">★</label>
+        <input type="radio" id="star4" name="rating"><label for="star4">★</label>
+        <input type="radio" id="star3" name="rating"><label for="star3">★</label>
+        <input type="radio" id="star2" name="rating"><label for="star2">★</label>
+        <input type="radio" id="star1" name="rating"><label for="star1">★</label>
+    </div>
+</body>
+</html>
